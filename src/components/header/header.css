@@ -1,0 +1,136 @@
+.container{
+max-width:1110px;
+width:100%;
+margin:0 auto;
+}
+
+.header {
+  width:100%;
+  height:80px;
+  position:absolute;
+  top:0;
+  left:0;
+  z-index:10;
+}
+.header__item {
+  height:100%;
+  display:flex;
+  align-items: center;
+}
+.header__menu {
+  width:100%;
+  display:flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.header__menu-list {
+    display:flex;
+  justify-content: space-between;
+  letter-spacing:2%;
+  font-size:15px;
+   transition:all 0.5s ease;
+
+}
+.header__menu-list li a{
+  color:black;
+  text-decoration:none;
+}
+ul{
+  padding:0;
+}
+.header__menu-list li a:hover{
+  color:#6E9C9F;
+  transition:all 0.5s ease;
+}
+.header__menu-list li:not(:last-child){
+  margin-right:45px;
+}
+.header__menu-list li:nth-of-type(1) >img{
+  display:inline-block;
+
+  margin-right:10px;
+}
+.card{
+  display:flex;
+  padding-bottom:10px;
+  flex-direction:column;
+align-items: center;
+ width:325px;
+ height:530px;
+ border:1px solid grey;
+ border-radius:10px;
+  text-align: center;
+  overflow:hidden;
+  cursor:pointer;
+}
+.addtocart{
+ width:35px;
+  height:65px;
+  border-radius:50%;
+  background:#6E9C9F;
+  outline:none;
+  border:none;
+  transition:all 0.5s ease;
+  color:white;
+}
+.addtocart:hover{
+  transform: translateY(-5px);
+    transition:all 0.5s ease;
+-webkit-box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2);
+-moz-box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2);
+box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2);;
+}
+.card h4{
+  font-size:20px;
+  line-height:15px;
+  margin-top:24px;
+  margin-bottom:8px;
+}
+.card p{
+  color:#998E78;
+  
+}
+.card img{
+  width:100%;
+  object-fit:contain;
+}
+.cart{
+  width:800px;
+  position:absolute;
+  top:80px;
+  padding:20px;
+  right:0;
+border:1px solid rgba(110, 156, 159, 0.2);
+  background:#fff;
+  -webkit-box-shadow: 7px 10px 10px 4px rgba(110, 156, 159, 0.2);
+-moz-box-shadow: 7px 10px 10px 4px rgba(110, 156, 159, 0.2);
+box-shadow: 7px 10px 10px 4px rgba(110, 156, 159, 0.2);
+}
+.empty{
+  width:200px;
+
+}
+.action{
+  background:red;
+}
+.element{
+  cursor:pointer;
+}
+.order{
+  display:flex;
+justify-content: space-around;
+margin-top:80px;
+}
+.order img{
+  width:100px;
+  height:100px;
+}
+.trash{
+  color:red;
+  transition:all 0.5s ease;
+  cursor:pointer;
+}
+.trash:hover{
+  transform:translateY(-5px);
+   transition:all 0.5s ease;
+}
